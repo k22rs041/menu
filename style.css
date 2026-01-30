@@ -1,8 +1,8 @@
 /* 全体 */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background: #0f0f0f;
+  font-family: 'Playfair Display', serif; /* 高級感フォント */
+  background: #0f0f0f; /* ダーク背景 */
   color: #e5e5e5;
   letter-spacing: 0.03em;
 }
@@ -10,38 +10,41 @@ body {
 /* ヘッダー */
 header {
   text-align: center;
-  padding: 40px 20px 30px;
+  padding: 50px 20px 30px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 0.15em;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 .subtitle {
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 13px;
   color: #bfa76f; /* ゴールド */
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 /* カテゴリ */
 .category {
-  margin: 24px 16px;
-  padding: 20px;
-  border: 1px solid #222;
-  border-radius: 10px;
+  margin: 32px 16px;
+  padding: 24px;
+  border-radius: 12px;
   background: #141414;
+  border: 1px solid #222;
 }
 
 .category h2 {
   margin: 0 0 16px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #bfa76f;
+  font-size: 18px;
+  font-weight: 700;
+  color: #bfa76f; /* ゴールド */
   border-bottom: 1px solid #333;
   padding-bottom: 8px;
+  letter-spacing: 0.05em;
 }
 
 /* メニュー項目 */
@@ -49,22 +52,31 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 12px 0;
+  line-height: 1.8;
 }
 
 .name {
-  font-size: 15px;
+  font-size: 16px;
+  color: #e5e5e5;
 }
 
 .price {
-  font-size: 14px;
-  color: #ccc;
+  font-size: 15px;
+  color: #cfcfcf;
+  font-weight: 400;
+}
+
+/* 売り切れ表示 */
+.soldout {
+  opacity: 0.4;
+  text-decoration: line-through;
 }
 
 /* フッター */
 footer {
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   color: #777;
   margin: 40px 0 20px;
 }
